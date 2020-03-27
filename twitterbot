@@ -1,0 +1,17 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+import random
+from time import sleep
+import string
+import selenium.webdriver as webdriver
+import selenium.webdriver.support.ui as ui
+
+chrome_options = Options()
+chrome_options.add_argument("--ignore-certificate-errors --noerrdialogs --disable-infobars")
+#chrome_options.add_argument("--headless")
+driver = webdriver.Chrome(chrome_options=chrome_options)
